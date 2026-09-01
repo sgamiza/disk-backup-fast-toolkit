@@ -1,0 +1,14 @@
+# Copy this file to backup_items.yaml before use.
+# backup_items relative paths are resolved below BACKUP_ROOT.
+# exclude_items/include_items relative paths use BACKUP_EXCLUDE_BASE.
+
+backup_items:
+  - Documents
+  - Projects
+
+exclude_items:
+  - AppData
+  - .cache
+
+include_items:
+  - AppData\Roaming\ExampleApp\settings

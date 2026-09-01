@@ -1,0 +1,74 @@
+# Real backup plans and local state
+backup_items.yaml
+backup_items_backup*.yaml
+.backup_resume_state.json
+.env
+.env.*
+!.env.example
+*secret*
+*credential*
+
+# Generated archives and backup output
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+backup/
+backups/
+output/
+downloads/
+captures/
+logs/
+*.log
+
+# Rust build and machine-specific Cargo configuration
+**/target/
+.cargo/
+**/.cargo/
+*.exe
+*.dll
+*.pdb
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Legacy implementations and local migration artifacts
+backup_config.py
+migrate_backup.py
+migrate_backup2.py
+python_backup/
+rust_fast_backup/
+setup_rust_proxy*.ps1
+README_v2.md
+README_v2.md.bak*
+
+# Temporary and personal workspace content
+temp/
+tmp/
+workspace/
+wiki/
+notes/
+knowledge/
+memory/
+.claude/
+.cursor/
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# 本机给 AI 的完整说明，不推送到 GitHub
+README.local.md
+
+# local Chinese notes / version history — not on GitHub
+README.LOCAL.md
+版本记录.md
